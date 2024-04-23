@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+      /* Fontawesome 4.7 */
+      @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+      body {
+        font-family: "Raleway", sans-serif;
+        color: #222;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin: 0;
+        background-color: royalblue;
+      }
+
+      a {
+        color: #222;
+        text-decoration: none;
+      }
+
+      .gnb {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+      }
+
+      .gnb a {
+        display: block;
+        font-size: 40px;
+        margin: 30px 0;
+        color: #fff;
+        transition: 0.5s;
+      }
+
+      /* 아래 두 css 는 순서가 변경되면 안 된다. */
+      .gnb:hover a {
+        opacity: 0.3;
+      }
+
+      .gnb a:hover {
+        opacity: 1;
+      }
+
+      .gnb a:before {
+        content: "\f105";
+        font-family: fontawesome;
+        margin-right: 10px;
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .gnb a:hover:before {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gnb">
+      <a href="#none">New Arrivals</a>
+      <a href="#none">Summer Collection</a>
+      <a href="#none">Winter Collection</a>
+      <a href="#none">Special Offers</a>
+      <a href="#none">Trends</a>
+    </div>
+  </body>
+</html>
