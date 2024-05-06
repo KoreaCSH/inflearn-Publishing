@@ -1,0 +1,55 @@
+.admin-container {
+  max-width: 2000px;
+  display: flex;
+  border: 1px solid #e1e1e1;
+  margin-top: 16px;
+}
+
+.admin-navbar {
+  width: 20%;
+  background-color: #f5f7fa;
+  padding: 8px 12px;
+  border-right: 1px solid #e1e1e1;
+}
+
+.admin-navbar a {
+  display: block;
+  padding: 8px;
+}
+
+.admin-navbar a:hover {
+  background-color: rgb(225, 233, 249);
+  color: #0273e6;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.admin-content {
+  padding: 8px 12px;
+}
+
+.admin-content h3 {
+  margin: 0;
+  padding: 8px;
+  color: var(--text-color);
+}
+
+.home-image-content-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home-image-content-header-btn a {
+  display: inline-block;
+  background-color: rgb(225, 233, 249);
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 1600px) {
+  .admin-container {
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
